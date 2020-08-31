@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background-color: #e7ecf2;
+    color: #2a2a2a;
+    line-height: 1.5;
+    padding-top: 90px;
+    padding-left: 70px;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
