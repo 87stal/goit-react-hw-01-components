@@ -1,0 +1,16 @@
+.line {
+    height: 55px;
+  }
+  
+  .bodyDark {
+    composes: line;
+    background-color: #ecf2f3;
+  }
+  .bodyLight {
+    composes: line;
+    background-color: #fff;
+  }
+
+  .typeTransaction {
+    text-transform: capitalize;
+  }

@@ -2,21 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Statistics.module.css";
 import randColor from "./randomColor";
+import StatisticItem from "../StatisticItem/StatisticItem"
 
 const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.container}>
-      <h2 className={styles.title}>{title}</h2>
-
+    {title.length > 0 &&(<h2 className={styles.title}>{title}</h2>) }
       <ul className={styles.statList}>
-        {stats.map((stat) => (
+        {stats.map(({id, label, percentage}) => (
           <li
             className={styles.item}
-            key={stat.id}
+            key={id}
             style={{ backgroundColor: randColor() }}
           >
-            <span className={styles.label}>{stat.label} </span>
-            <span className={styles.percentage}>{stat.percentage}%</span>
+          <StatisticItem label ={label} percentage = {percentage}></StatisticItem>
           </li>
         ))}
       </ul>
@@ -26,7 +25,9 @@ const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array.isRequired,
+  stats: PropTypes.arrayOf( PropTypes.shape({
+    id: PropTypes.string.isRequired,
+  }),).isRequired,
 };
 
 export default Statistics;

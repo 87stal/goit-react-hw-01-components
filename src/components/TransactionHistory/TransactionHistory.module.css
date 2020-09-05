@@ -7,18 +7,7 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
-.line {
-  height: 55px;
-}
 
-.bodyDark {
-  composes: line;
-  background-color: #ecf2f3;
-}
-.bodyLight {
-  composes: line;
-  background-color: #fff;
-}
 .tbody {
   text-align: center;
 }
@@ -27,6 +16,4 @@
   color: #fff;
 }
 
-.typeTransaction {
-  text-transform: capitalize;
-}
+
