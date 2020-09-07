@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styles from "./StatisticItem.module.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './StatisticItem.module.css';
 
 const StatisticItem = ({ label, percentage }) => {
   return (

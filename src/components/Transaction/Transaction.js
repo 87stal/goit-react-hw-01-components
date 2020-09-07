@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styles from "./Transaction.module.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './Transaction.module.css';
 
 const Transaction = ({ type, amount, currency, idx }) => {
   return (

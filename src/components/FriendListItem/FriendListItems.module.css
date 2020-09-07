@@ -1,24 +1,23 @@
 .status {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right: 5px;
-    margin-top: 15px;
-  }
-  
-  .online {
-    composes: status;
-    background-color: green;
-  }
-  
-  .offline {
-    composes: status;
-    background-color: red;
-  }
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 15px;
+}
 
-  .avatar {
-    border-radius: 10%;
-    height: 48px;
-    margin-right: 5px;
-  }
-  
+.online {
+  composes: status;
+  background-color: green;
+}
+
+.offline {
+  composes: status;
+  background-color: red;
+}
+
+.avatar {
+  border-radius: 10%;
+  height: 48px;
+  margin-right: 5px;
+}
